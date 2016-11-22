@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/images/icons/apple-touch-icon-57x57.png">
+
+    <title>HackTurabo</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="aassets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue_grey-deep_orange.min.css" />
+    <link rel="stylesheet" href="https://cdn.rawgit.com/FezVrasta/bootstrap-material-design/dist/dist/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/css/mdb.min.css" type="text/css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="assets/css/app.css" />
+
+
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="assets/js/jquery.js"></script>
+
+    <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/js/mdb.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+
+</head>
+
+<body>
+
+    <!--*******************************************NAVBAR*******************************************-->
+
+    <!-- Navigation -->
+    <!-- Simple header with scrollable tabs. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title"><img id="logo" class="nav-logo" src="assets/images/hacklogo.png"></span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation. We hide it in small screens. -->
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a class="mdl-navigation__link" href="#home">Home</a>
+                    <a class="mdl-navigation__link" href="#calendar">Calendar</a>
+                    <!-- <a class="mdl-navigation__link" href="">Prizes</a> -->
+                    <a class="mdl-navigation__link" href="#news">News</a>
+                    <a class="mdl-navigation__link" href="#projects">Projects</a>
+                    <a class="mdl-navigation__link" href="#whatIs">About</a>
+                    <a class="mdl-navigation__link" href="#board-section">Management Board</a>
+                    <a class="mdl-navigation__link Join" href="http://goo.gl/forms/9rezoyB9i7">Join Us</a>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+            <span class="mdl-layout-title nav-logo2"><img id="logo" src="assets/images/hacklogo.png"></span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="#home"><i class="material-icons home2">home</i>Home</a>
+                <a class="mdl-navigation__link" href="#calendar"><i class="material-icons home2">event</i>Calendar</a>
+                <!-- <a class="mdl-navigation__link" href="">Prizes</a> -->
+                <a class="mdl-navigation__link" href="#news"><i class="material-icons home2">new_releases</i>News</a>
+                <a class="mdl-navigation__link" href="#projects"><i class="material-icons home2">build</i>Projects</a>
+                <a class="mdl-navigation__link" href="#whatIs"><i class="material-icons home2">help</i>About</a>
+                <a class="mdl-navigation__link" href="board-section"><i class="material-icons home2">face</i>Managemnt Board</a>
+                <a class="mdl-navigation__link" href="http://goo.gl/forms/9rezoyB9i7"><i class="material-icons home2">plus_one</i>Join Us</a>
+            </nav>
+        </div>
+
+
+
+
+        <main class="mdl-layout__content">
+            <div class="container-fluid Container-Main">
+
+                <!-- <video id="my-video" class="video controls autoplay" autoplay  loop="loop" muted="" width="300" height="150">
+  <source src="assets/images/IMG_5933.m4v" type="video/mp4" />
+  <source src="assets/images/IMG_5933.m4v" type="video/ogg" />
+</video> -->
+
+                <div class="android-be-together-section mdl-typography--text-center" id="home">
+
+                </div>
+
+                <div id="calendar" class="Calendar section">
+                    <div class="row about-texts container-row-cal">
+
+                        <div class="col-md-6 col-sm-12 main-header">
+                            <div class="section-header1 calendar-header">
+                                <h1 class="section-header1">Activities <span style="color: #F5842B">Calendar</span></h1>
+                            </div>
+                            <br>
+                            <h5 class="calendar-text2">See what's next for Hack Turabo</h5>
+                        </div>
+
+                        <div class="col-md-6 col-sm-12">
+                            <div class="embed-responsive embed-responsive-16by9 mdl-shadow--2dp">
+                                <iframe class="embed-responsive-item" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23eeeeee&amp;src=hgobpllr9r3c812hgd755k4fik%40group.calendar.google.com&amp;color=%2323164E&amp;ctz=America%2FPuerto_Rico"
+                                    style="border-width:0" width="75%" height="75%" frameborder="0" scrolling="no"></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="news">
+                    <div class="container-fluid row">
+
+
+                        <div class="col-md-12 text-justify">
+
+                            <div class="container-fluid container-row" id="news">
+
+                                <h1 class="section-header2 padding-top">Ne<span style="color: #F5842B">ws:</span></h1>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="container-fluid container-row">
+
+                            <div class="col-md-12 image-col">
+
+                                <img src="assets/images/unity.png" alt="" class="Flyer">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nonCarousel2 section first-news">
+
+                    <div class="row news-row">
+                        <div class="col-md-3 col-xs-6 news-img1">
+                            <img src="assets/images/hackathon2.jpg" class="news-img image-responsive">
+                        </div>
+                        <div class="col-md-3 col-xs-6 news-img2">
+                            <img src="assets/images/carousel/slide3.jpg" class="news-img">
+                        </div>
+                        <div class="col-md-3 col-xs-6 news-img3">
+                            <img src="assets/images/Presenting.jpg" class="news-img image-responsive">
+                        </div>
+                        <div class="col-md-3 col-xs-6 news-img4">
+                            <img src="assets/images/taller.jpeg" class="news-img image-responsive">
+                        </div>
+                    </div>
+
+                    <div class="row news-row4">
+                        <div class="col-md-3  col-xs-6 news-img8">
+                            <img src="assets/images/carousel/slide4.jpg" class="news-img image-responsive">
+                        </div>
+                        <div class="col-md-3  col-xs-6 news-img5">
+                            <img src="assets/images/hackathon/Live.jpg" class="news-img image-responsive">
+                        </div>
+                        <div class="col-md-3 col-xs-6 news-img6">
+                            <img src="assets/images/File_009.jpeg" class="news-img image-responsive">
+                        </div>
+                        <div class="col-md-3 col-xs-6 news-img7">
+                            <img src="assets/images/boxes.jpeg" class="news-img image-responsive">
+                        </div>
+                    </div>
+                </div>
+
+
+                    <div class="Projects section">
+
+                        <div id="projects" class="row text-justify">
+
+                            <div class="container-fluid container-row">
+
+                                <div class="col-xs-12 header-column">
+
+                                    <h1 class="section-header2">Proj<span style="color: #F5842B">ects:</span></h1>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-row row">
+                            <div class="container-fluid container-row row">
+                                <div class="col-md-3 col-sm-6 col-xs-12 project-card">
+                                    <div class="mdl-card mdl-shadow--4dp portfolio-card">
+                                        <div class="mdl-card__media">
+                                            <img class="project-image" src=" assets/images/android-App.jpg" border="0" alt="">
+                                        </div>
+                                        <div class="mdl-card__title  project-title">
+                                            <h2 class="mdl-card__title-text project-title">Hack Turabo Android App</h2>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-12 project-card">
+                                    <div class=" mdl-card mdl-shadow--4dp portfolio-card">
+                                        <div class="mdl-card__media">
+                                            <img class="project-image" src=" assets/images/IOS-App.jpg" border="0" alt="">
+                                        </div>
+                                        <div class="mdl-card__title  project-title">
+                                            <h2 class="mdl-card__title-text project-title">Hack Turabo iOS App</h2>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-12 project-card">
+                                    <div class="mdl-card mdl-shadow--4dp portfolio-card">
+                                        <div class="mdl-card__media">
+                                            <img class="project-image" src="assets/images/light-Dress.jpg" border="0" alt="">
+                                        </div>
+                                        <div class="mdl-card__title  project-title">
+                                            <h2 class="mdl-card__title-text project-title">Light Dress</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-12 project-card">
+                                    <div class="mdl-card mdl-shadow--4dp portfolio-card">
+                                        <div class="mdl-card__media">
+                                            <img class="project-image" src=" assets/images/vr.jpg" border="0" alt="">
+                                        </div>
+                                        <div class="mdl-card__title  project-title">
+                                            <h2 class="mdl-card__title-text project-title">Virtual Reality Galaga</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row news-row">
+                            <div class="container-fluid container-row row">
+                                <div class="col-md-3 col-sm-6 col-xs-12 project-card">
+                                    <div class=" mdl-card mdl-shadow--4dp portfolio-card">
+                                        <div class="mdl-card__media">
+                                            <img class="project-image" src="assets/images/Myo.jpg" border="0" alt="">
+                                        </div>
+                                        <div class="mdl-card__title  project-title">
+                                            <h2 class="mdl-card__title-text project-title">Myo</h2>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-12 project-card">
+                                    <div class=" mdl-card mdl-shadow--4dp portfolio-card">
+                                        <div class="mdl-card__media">
+                                            <img class="project-image" src="assets/images/gameboy.jpg" border="0" alt="">
+                                        </div>
+                                        <div class="mdl-card__title  project-title">
+                                            <h2 class="mdl-card__title-text project-title">Gameboy Pi</h2>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-12 project-card">
+                                    <div class="mdl-card mdl-shadow--4dp portfolio-card">
+                                        <div class="mdl-card__media">
+                                            <img class="project-image" src=" assets/images/Hack-Web.PNG" border="0" alt="">
+                                        </div>
+                                        <div class="mdl-card__title  project-title">
+                                            <h2 class="mdl-card__title-text project-title">Hack Turabo Web Page</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- <div class="col-md-6">
+                        <h1>Proj<span style="color: #F5842B">ects:</span></h1>
+                        <img src="Assets/images/gethacking.png" class="img-responsive center-block" alt="hacking">
+                    </div>
+
+                    <div class="col-md-6 text-justify Projects-Paragraph">
+
+                        <p><span style="font-weight: bold;">Hack<span style="color: #F5842B; font-weight: bold;">Turabo</span></span> created an iniciative called "Get Hacking", to provide students techincal project so they can practice what they learn in
+                            class. All projects are mixes of students from different academic year so everyone gets an equal chance. The on going projects at the current moment are:
+                            <ul>
+                                <li>Virtual Reality Galaga</li>
+                                <li>Hack Turabo Android App</li>
+                                <li>Hack Turabo iOS App</li>
+                                <li>Light Dress</li>
+                                <li>Myo</li>
+                                <li>Gameboy using a Raspberry Pi</li>
+                                <li>Hack Turabo Web Page</li>
+                            </ul>
+                        </p>
+                    </div>  -->
+                    <!-- <div class="col-md-12 text-center project-button">
+                        <p><a class="btn btn-primary btn-lg" href="http://bit.ly/1oVuQKf" role="button" id="JoinBtn">More Info</a></p>
+                    </div> -->
+                </div>
+
+                <div id="whatIs" class="nonCarousel3">
+
+                    <div class="row about-section">
+                    </div>
+
+
+                    <div class="row about-texts">
+                        <div class="container-fluid container-row">
+                            <div class="col-md-12 header-column">
+                                <h1 class="About-Header">What is Hack<span style="color: #F5842B">Turabo?</span></h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row about-texts">
+                        <div class="container-fluid container-row">
+                            <div class="col-md-12">
+                                <p class="Min-text"><span style="font-weight: bold;">Hack<span style="color: #F5842B; font-weight: bold;">Turabo</span></span> is a student association at the Universidad del Turabo that seeks to promote the hacker and startup culture in students.
+                                    We try to achieve our goal by giving workshops of topics that help the students to have skills that are not taught in the classroom. Also, we encourage our members to be part of a project of interest to help them expand
+                                    their knowledge by working hands on. HackPR is providing resources and guidance to HackTurabo, so that the members can acquire experience and useful skills to be used in events. Our main goal is to have activities,
+                                    such as: workshops, tech talks and our own small local hackathons.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row about-texts">
+                        <div class="container-fluid container-row row">
+
+                            <div class="col-md-4 col-sm-12 col-xs-12 About-card">
+                                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                                    <div class="mdl-card__title mdl-card--expand">
+                                        <h2 class="mdl-card__title-text">HackPR: Organization</h2>
+                                    </div>
+                                    <div class="mdl-card__supporting-text">
+                                        HackPR is a non-profit organization which is run by students. It originated in December of 2012 and it began with isolated hackathons that have now evolved into a more structured organization, with the purpose of expanding the hacker community in Puerto
+                                        Rico.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12 col-xs-12 About-card">
+                                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                                    <div class="mdl-card__title mdl-card--expand">
+                                        <h2 class="mdl-card__title-text">Vision</h2>
+                                    </div>
+                                    <div class="mdl-card__supporting-text">
+                                        HackPR is a non-profit organization which is run by students. It originated in December of 2012 and it began with isolated hackathons that have now evolved into a more structured organization, with the purpose of expanding the hacker community in Puerto
+                                        Rico.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12 col-xs-12 About-card">
+                                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                                    <div class="mdl-card__title mdl-card--expand">
+                                        <h2 class="mdl-card__title-text">Mision</h2>
+                                    </div>
+                                    <div class="mdl-card__supporting-text">
+                                        Aspire to raise the standards and inspire the hacker culture in Puerto Rico, through the production of hackathons and other related activities, where students professionals and the general startup and tech communities can come together.
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="board section " id="board-section">
+
+                    <div class="row nonCarousel2 about-texts board">
+                        <div class="container-fluid board container-row-cal">
+
+                            <h1 class="Directiva-Header  board">Management <span style="color: #F5842B">Board:</span></h1>
+
+                        </div>
+                    </div>
+
+                    <div class="row nonCarousel2 about-texts board">
+                        <div class="container-fluid container-row board row">
+
+
+                            <div class="col-md-2 col-sm-6 col-xs-12 board-col">
+
+                                <div class="image-container">
+                                    <img src="assets/images/board/Pedro Anibarro.jpg" alt="President" class="img-circle center-block Board">
+                                </div>
+
+
+
+                                <div class="text-center board-text">
+
+                                    Pedro Anibarro
+                                    <br> President
+                                    <br> Computer Engineering
+
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-2 col-sm-6 col-xs-12 board-col">
+
+                                <div class="image-container">
+
+                                    <img src="assets/images/board/Harry Miranda.jpg" alt="Vice President" class="img-circle center-block Board">
+
+                                </div>
+
+                                <div class="text-center">
+
+                                    Harry Miranda
+                                    <br> Vice President
+                                    <br> Computer Engineering
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-2 col-sm-6 col-xs-12 board-col">
+
+                                <div class="image-container">
+
+                                    <img src="assets/images/board/Joshua Valentin.jpg" alt="Tresurer" class="img-circle center-block Board">
+                                </div>
+                                <div class="text-center">
+
+                                    Joshua Valentín
+                                    <br> Tresurer
+                                    <br> Computer Engineering
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-2 col-sm-6 col-xs-12 board-col">
+                                <div class="image-container">
+                                    <img src="assets/images/board/Eduardo Fenollal.jpg" alt="Human Resources" class="img-circle center-block Board">
+                                </div>
+                                <div class="text-center">
+
+                                    Eduardo Fenollal
+                                    <br> Human Resources
+                                    <br> Mechanical Engineering
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-2 col-sm-6 col-xs-12 board-col">
+                                <div class="image-container">
+                                    <img src="assets/images/board/Kriziani de Jesus.jpg" alt="Public Relations" class="img-circle center-block Board">
+                                </div>
+                                <div class="text-center">
+
+                                    Kriziani de Jesús
+                                    <br> Social Media Manager
+                                    <br> Computer Engineering
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-2 col-sm-6 col-xs-12 board-col">
+                                <div class="image-container">
+                                    <img src="assets/images/board/Stephanie Quinones.jpg" alt="Secretary" class="img-circle center-block Board">
+                                </div>
+                                <div class="text-center">
+
+                                    Stephanie Quiñones
+                                    <br> Secretary
+                                    <br> Computer Engineering
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="row nonCarousel2 about-texts board">
+                        <div class="container-fluid container-row board row">
+
+                            <div class="col-md-2 col-sm-6 col-xs-12 board-col">
+                                <div class="image-container">
+                                    <img src="assets/images/board/Ricardo Cruz.jpg" alt="Activity Manager" class="img-circle center-block Board">
+                                </div>
+                                <div class="text-center">
+
+                                    Ricardo Cruz
+                                    <br> Activity Manager
+                                    <br> Computer Engineering
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-2 col-sm-6 col-xs-12 board-col">
+                                <div class="image-container">
+                                    <img src="assets/images/board/Felipe Villafane.jpg" alt="Activity Coordinator" class="img-circle center-block Board">
+                                </div>
+                                <div class="text-center">
+
+                                    Felipe Villafañe
+                                    <br> Activity Manager
+                                    <br> Electrical Engineering
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="nonCarousel1 section JoinUs">
+
+                    <div class="row center-item">
+                        <div class="container-fluid container-row">
+                            <div class="col-md-12 center-item">
+                                <h1 class="hack-education">#HackUr<span style="color: white">Education</span></h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row center-item">
+                        <div class="container-fluid container-row">
+                            <div class="col-md-12 center-item">
+                                <a class="btn btn-primary btn-lg Join-button" href="http://goo.gl/forms/9rezoyB9i7" role="button" id="JoinBtn">Join US</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row schedule footer-Padding">
+
+                    <div class="col-md-4 col-xs-12 footer-Padding">
+
+                        <button type="button" class="btn-link">
+                                      <a href="https://www.facebook.com/HackTurabo/?ref=br_rs" target="_blank"><img src="assets/images/Facebook.jpg" alt="facebook" class="img-rounded" height="32px" width="auto"></a>
+                                    </button>
+                        <button type="button" class="btn-link">
+                                        <a href="https://twitter.com/HackTurabo"><img src="assets/images/Twitter.jpg" alt="facebook" class="img-rounded" height="32px" width="auto"></a>
+                                    </button>
+                    </div>
+
+                    <div class="col-md-4 col-xs-12 text-center Developed-by">
+                        Developed by Hack<span style="color: #F5842B">Turabo</span>'s members.
+                    </div>
+
+                </div>
+            </div>
+
+    </div>
+
+    <button class="mdl-button mdl-js-button mdl-button--colored mdl-button--fab" id="view-source">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfhY4c9kmjTTA9C3W7ov3UnLl9fL4NM7JJ-NUYT3XpIB0nEvQ/viewform" target="_blank"
+  <i class="material-icons FAB">add</i></a>
+</button>
+
+    </section>
+    </main>
+    </div>
+
+</body>
+
+</html>
