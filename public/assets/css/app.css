@@ -880,7 +880,9 @@ height: 359.5px;
 
 .board {
   background-color: white;
-align-items: center;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .padding-top {
