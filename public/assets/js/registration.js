@@ -4,23 +4,18 @@ var $ = function (id){
 
 }
 
-var socket = io('http://208.68.37.238:3090');
+var socket = typeof io === 'function' ? io(window.HACKTURABO_SOCKET_URL || window.location.origin) : null;
 
-socket.on('success', function(success){
-	    
-	if(success){
-
-        alert("Registration successful.")
-		window.location.href = "../index.html";
-
-	}else{
-
-		alert("An error occurred. Please try again later or contact us at hackprut@gmail.com.");
-
-	}
-	
-
-});
+if (socket) {
+	socket.on('success', function(success){
+		if(success){
+			alert("Registration successful.");
+			window.location.href = "../index.html";
+		}else{
+			alert("An error occurred. Please try again later or contact us at hackprut@gmail.com.");
+		}
+	});
+}
 
 
 /*******************************ON LOAD*******************************/
@@ -54,8 +49,13 @@ window.onload = function () {
 
                         if(city != ""){
 
-                            socket.emit('hackathon-registration', firstName, lastName, age, tshirtSize, city, email, university, academicYear, firstHackathon, resume);
-                            flag = false;
+                            if (socket) {
+                                socket.emit('hackathon-registration', firstName, lastName, age, tshirtSize, city, email, university, academicYear, firstHackathon, resume);
+                                flag = false;
+                            } else {
+                                alert("Registration service is unavailable in static archive mode.");
+                                flag = false;
+                            }
 
                         }
 
